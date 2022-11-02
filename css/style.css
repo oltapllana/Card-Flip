@@ -1,0 +1,28 @@
+.main{
+    width: 300px;
+    height: 500px;
+  }
+  .main:hover .container{
+   transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: all 0.8s ;
+  }
+   .front, .back{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    backface-visibility: hidden;
+  }
+  .back{
+    transform: rotateY(180deg);
+  }
+  .front img{
+      width: 300px;
+      height: 500px;
+      object-fit: cover;
+  }
+  .back img{
+      width: 300px;
+      height: 500px;
+      object-fit: cover;
+  }
